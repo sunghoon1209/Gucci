@@ -1485,7 +1485,7 @@ footer {
 
         .fourthInner {
             height: 1020px;
-            width: $mobile_grid;
+            min-width: $mobile_grid;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -1578,7 +1578,7 @@ footer {
         /* background-color: red; */
 
         .footerInner {
-            width: $mobile_grid;
+            min-width: $mobile_grid;
 
 
             /* display: flex; */
