@@ -1,0 +1,231 @@
+@import "./variable";
+
+// 비디오 버튼박스
+@mixin btnBox {
+    width: 30px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+//  비디오 버튼박스안 버트
+@mixin btnImg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: 0.5s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+//  텍스트박스
+@mixin textBox($boxtop:400px) {
+    position: absolute;
+    top: $boxtop;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    color: #fff;
+    letter-spacing: -2.4px;
+    line-height: 56px;
+    text-align: center;
+    width: 600px;
+   
+}
+
+// 텍스트박스 아래 버튼
+@mixin dBtn {
+    background-color: #fff;
+    width: 200px;
+    height: 48px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 48px;
+    display: block;
+    transition: 1s ease;
+    margin-top: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+
+}
+
+@mixin imgCover {
+    width: 49.5%;
+   overflow: hidden;
+    position: relative;
+  
+}
+
+@mixin imgScale {
+    width: 100%;
+    height: 1000px;
+    transform: scale(2);
+    transition: 1s ease;
+    display: block;
+}
+
+@mixin tag {
+    font-size: 12px;
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 60px;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 2;
+}
+
+//밑줄효과
+@mixin pUnder($fiz:12px) {
+
+    font-size: $fiz;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+}
+
+@mixin underLine($color:#000) {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $color;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+// 호버시 밑줄 삭제
+@mixin daUnderLine($color:#000) {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $color;
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    left: auto;
+    right: 0;
+}
+
+// 약간의 딜레이 후 다시 밑줄 등장
+@mixin reIn($color:#000) {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $color;
+    position: absolute;
+    bottom: 0;
+    transition-delay: 0.5s;
+    width: 0%;
+    transition: 0.3s;
+}
+
+// 사라짐
+@mixin reOut($color:#000) {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition-delay: 0.5s;
+}
+
+
+
+
+// 모바일 : 최소 '모바일'사이즈부터 ~ 최대 '모바일에서 태블릿'사이즈까지
+
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+//  모바일텍스트박스
+
+// @mixin mtextBox($boxbottom:20px) {
+//     position: absolute;
+//     bottom: $boxbottom;
+//     right: 50%;
+//     transform: translateX(-50%);
+//     font-size: 34px;
+//     color: #fff;
+//     letter-spacing: -2.4px;
+//     line-height: 56px;
+//     text-align: center;  
+//     width: 400px;
+//     height: 200px;
+   
+   
+// }
+
+
+
+
+// // 모바일텍스트박스 아래 버튼
+// @mixin mdBtn {
+//     background-color: #fff;
+//     width: 140px;
+//     height: 48px;
+//     text-align: center;
+//     border-radius: 3px;
+//     font-size: 12px;
+//     font-weight: bold;
+//     line-height: 48px;
+//     display: block;
+//     transition: 1s ease;
+//     margin-top: 20px;
+//     // position: absolute;
+//     // transform: translateX(-50%);
+//     left: 50%;
+   
+
+// }
+
+// 모바일이미지커버
+@mixin mimgCover {
+    width: 100%;
+    height: 49%;    
+    position: relative;
+}
+
+@mixin mimgScale {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    display: block;
+   
+}
+
+@mixin mtag {
+    font-size: 12px;
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 2;
+}
