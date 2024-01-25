@@ -3,8 +3,12 @@
 // 변수 
 
 $grid:1312px;
-
-$mobile_grid: 94%;
+$tablet_grid: 800px;
+$mobile_grid: 540px;
+// 태블릿
+$breakpoint_tablet: 1350px;
 // 모바일
 $breakpoint_mobile: 768px;
+
+
 

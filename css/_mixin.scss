@@ -159,6 +159,13 @@
   }
 }
 
+// 태블릿 : 최소 태블릿~ 최대 pc 사이즈
+@mixin tablet {
+    @media (min-width: 768px) and (max-width :($breakpoint_tablet)){
+      @content;
+    }
+  }
+
 //  모바일텍스트박스
 
 // @mixin mtextBox($boxbottom:20px) {
