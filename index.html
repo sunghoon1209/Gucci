@@ -38,10 +38,10 @@
                     <ul class="nav_list">
                         <li><img class="cart" src="./src/images/cart.svg" alt="장바구니 로고"></li>
                         <li><img src="./src/images/account.svg" alt="계정 로고" class="myPagebtn"></li>
-                        <li><img src="./src/images/search.svg" alt="검색 로고" class="searchBtn"></li>
+                        <li><img src="./src/images/search.svg" alt="검색 로고" class="searchBtn" id="searchButton"></li>
                         <li><img src="./src/images/hbtn.svg" class="hbtn" alt="햄버거 로고"></li>
                     </ul>
-                    <div class="searchMenu">
+                    <div class="searchMenu" id="searchContainer">
                         <div class="searchInput">
                             <p>무엇을 찾고 계신가요?</p>
                             <div><input type="text">
@@ -245,7 +245,7 @@
                             <p>특별한 온라인 서비스</p>
                         </div>
 
-                        <div class="specialBox">
+                        <div class="specialBox banner_slider">
 
                             <div class="specialCover">
                                 <div><a href="#"><video src="./src/video/special01.mp4" class="video1" muted autoplay
@@ -254,6 +254,7 @@
                                         <img src="./src/images/pause.svg" alt="일시정지버튼" class="pap1">
                                         <img src="./src/images/sound-on.png" alt="사운드버튼" class="soof1">
                                     </div>
+
                                 </div>
 
 
@@ -385,9 +386,7 @@
         <script>
             new WOW().init();
         </script>
-        <script>
-            // slick plugin
-        </script>
+        
     </body>
 
     </html>

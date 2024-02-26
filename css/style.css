@@ -1847,6 +1847,25 @@ footer .footerInner .otherLogo ul.footerCon li p {
   #wrap main section#first .videoInner .videoCover {
     height: 800px;
   }
+  #wrap main section#first .videoInner .videoCover .mtextBox a.dBtn {
+    background-color: #fff;
+    width: 200px;
+    height: 48px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 48px;
+    display: block;
+    transition: 1s ease;
+    margin-top: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  #wrap main section#first .videoInner .videoCover .mtextBox a.dBtn:hover {
+    transform: scale(0.9);
+  }
   #wrap main section#first .videoInner .videoCover video {
     width: 720px;
   }
@@ -1907,4 +1926,4 @@ footer .footerInner .otherLogo ul.footerCon li p {
   #wrap footer .footerInner .bLogo img {
     width: 800px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

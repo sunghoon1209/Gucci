@@ -1583,7 +1583,7 @@ footer {
                 }
 
                 .specialBox {
-
+                    
                     gap: 20px;
                 }
             }
@@ -1772,6 +1772,19 @@ footer {
                 .videoCover {
                     height: 800px;
 
+                    .mtextBox {
+
+                        a.dBtn {
+                            @include dBtn;
+
+
+                            &:hover {
+                                transform: scale(0.9);
+
+                            }
+                        }
+                    }
+
                     video {
                         width: 720px;
                     }
@@ -1841,12 +1854,12 @@ footer {
         }
 
         /*태블릿 footer*/
-        footer{
+        footer {
             height: 1000px;
 
-            .footerInner{
+            .footerInner {
                 width: $tablet_grid;
-        
+
                 .otherLogo {
                     margin: 24px 0 24px 0;
                     height: auto;
@@ -1862,10 +1875,10 @@ footer {
                         width: $tablet_grid;
                     }
                 }
-    }
+            }
         }
 
-      
+
 
     }
 }
